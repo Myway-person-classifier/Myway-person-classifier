@@ -320,7 +320,7 @@ class Gemma3TextForSequenceClassification(Gemma3PreTrainedModel,
 
 # ───────────────────── HF factory 등록 ────────────────────────────────
 AutoModelForSequenceClassification.register(
-    Gemma3Config, Gemma3ForSequenceClassification)
+    Gemma3Config, Gemma3ForSequenceClassification, exist_ok=True)
 AutoModelForSequenceClassification.register(
-    Gemma3TextConfig, Gemma3TextForSequenceClassification)
+    Gemma3TextConfig, Gemma3TextForSequenceClassification, exist_ok=True)
 # ───────────────────────────────────────────────────────────────────────
